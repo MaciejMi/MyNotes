@@ -3,7 +3,7 @@ html(lang="pl")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title My Notes
+        title #{title}
         link(rel="preconnect", href="https://fonts.googleapis.com")
         link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
         link(rel="stylesheet", href="./css/style.css")
@@ -19,3 +19,5 @@ html(lang="pl")
                             li 
                                 h3 #{note.title}
                                 p #{note.message}
+                    if notes.length === 0
+                        p You don't have any notes!
