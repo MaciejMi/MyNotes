@@ -16,14 +16,14 @@
         <section class="section new-note">
             <h1>New note</h1>
 
-            <form class="new-note__form">
+            <form method="POST" class="new-note__form">
                 <div>
                     <p>Title</p>
-                    <input type="text" placeholder="Title">
+                    <input type="text" placeholder="Title" name="title" required>
                 </div>
                 <div>
                     <p>Note</p>
-                    <textarea cols="30" rows="10" placeholder="Start typing here..."></textarea>
+                    <textarea cols="30" rows="10" placeholder="Start typing here..." name="message" required></textarea>
                 </div>
                 <button type="submit">Save</button>
             </form>
